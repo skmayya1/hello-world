@@ -1,13 +1,17 @@
 fn main() {
     hello();
     data_types();
+    function(5);
+    let added_value_returned:i8 = funcftion_with_return( 5,6);
+    println!("added_value_returned:{}",added_value_returned)
 }
 fn hello(){
     println!("Hello, world!");
 }
 
 fn data_types(){
-    //INT
+    //INT signed:- i8,i16.... unsigned: u8,u16...
+    
     let num:u8 =4;
     println!("num: {} ", num); 
     let mut num2:i8 = 4;
@@ -29,7 +33,13 @@ fn data_types(){
 
     //DESTRUCTURING TUPPLE
 
-    let (Ename,Eage,Erole) = emp_info;
-    println!("Name: {} Age: {} Role: {}", Ename, Eage, Erole);
+    let (ename,eage,erole) = emp_info;
+    println!("Name: {} Age: {} Role: {}", ename, eage, erole);
 }
 
+fn function(item:i8){
+    println!("item: {}", item);
+}
+fn funcftion_with_return(item1:i8,item2:i8)->i8{
+    return item1+item2;
+}
