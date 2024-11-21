@@ -3,7 +3,8 @@ fn main() {
     data_types();
     function(5);
     let added_value_returned:i8 = funcftion_with_return( 5,6);
-    println!("added_value_returned:{}",added_value_returned)
+    println!("added_value_returned:{}",added_value_returned);
+    struct_example();
 }
 fn hello(){
     println!("Hello, world!");
@@ -42,4 +43,18 @@ fn function(item:i8){
 }
 fn funcftion_with_return(item1:i8,item2:i8)->i8{
     return item1+item2;
+}
+
+fn struct_example(){
+    struct Employee{
+        name:String,
+        age:i8,
+        role:String
+    }
+    let emp1 = Employee{
+        name:String::from("John"),
+        age:25,
+        role:String::from("Software Engineer")
+    };
+    println!("Name: {} Age: {} Role: {}", emp1.name, emp1.age, emp1.role);
 }
