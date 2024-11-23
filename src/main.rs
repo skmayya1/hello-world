@@ -58,3 +58,12 @@ fn struct_example(){
     };
     println!("Name: {} Age: {} Role: {}", emp1.name, emp1.age, emp1.role);
 }
+
+fn array_example(){
+    let arr = [1,2,3,4,5];
+    println!("arr[0]: {}", arr[0]);
+    println!("arr[1]: {}", arr[1]);
+    println!("arr[2]: {}", arr[2]);
+    println!("arr[3]: {}", arr[3]);
+    println!("arr[4]: {}", arr[4]);
+}
